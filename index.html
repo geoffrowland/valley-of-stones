@@ -380,7 +380,8 @@
 		opacity: 0.5,
 		attribution: "© <a href='https://www.dorsetcouncil.gov.uk/libraries-history-culture/dorset-history-centre/' target='_blank'>Dorset History Centre</a>",
 		minZoom: 12,
-		maxNativeZoom: 18
+		maxNativeZoom: 18,
+		maxZoomL 20
 		//bounds: L.latLngBounds([[50.667743, -3.133850],[50.884842, -2.988281]])
 	});
 	var dorset1 = L.tileLayer('https://geoffrowland.github.io/OS-First-Dorset-1/{z}/{x}/{y}.png', {
@@ -680,7 +681,7 @@
 		"<span title = 'BGS Geology Made Up Ground'>Geology Artificial</span>": bgs50art,
 		"<span title = 'BGS Geology Linear Features'>Geology Linear</span>": geolin,
 		"<span title = 'Parish outlines'>Parish</span>": parish,
-		"<span title = 'Sites'>Site</span>": site,
+		//"<span title = 'Sites'>Site</span>": site,
 		"<span title = 'Drawing tools'>Draw</span>": drawnItems
 	};
     var allMapLayers = { 
@@ -703,7 +704,7 @@
 		'bgs50art': bgs50art,
 		'geolin': geolin,
 		'parish': parish,
-		'site': site,
+		//'site': site,
 	    'drawnItems': drawnItems
 	};
     var osmGeocoder = new L.Control.OSMGeocoder();
